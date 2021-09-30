@@ -21,6 +21,7 @@ namespace UserMaintenance
             lblLastName.Text = Resource1.FullName; // label1
             btnAdd.Text = Resource1.Add; // button1
             btnExp.Text = Resource1.Export; //button2
+            btnDel.Text = Resource1.Delete; //button3
 
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
@@ -52,6 +53,17 @@ namespace UserMaintenance
                 FullName = txtLastName.Text,
             };
             users.Add(u);
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            var name = Convert.ToString(listBox1.SelectedValue);
+            var u = from x in users
+                    where x.ID.ToString() == name
+                    select x;
+            users.Remove(u.FirstOrDefault());
+
+
         }
     }
 }

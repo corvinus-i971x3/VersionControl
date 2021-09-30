@@ -36,6 +36,7 @@ namespace UserMaintenance
             this.btnAdd = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnExp = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtLastName
@@ -74,7 +75,7 @@ namespace UserMaintenance
             // 
             this.btnAdd.Location = new System.Drawing.Point(216, 98);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(232, 42);
+            this.btnAdd.Size = new System.Drawing.Size(101, 42);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -98,12 +99,23 @@ namespace UserMaintenance
             this.btnExp.UseVisualStyleBackColor = true;
             this.btnExp.Click += new System.EventHandler(this.btnExp_Click);
             // 
+            // btnDel
+            // 
+            this.btnDel.Location = new System.Drawing.Point(352, 98);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(96, 42);
+            this.btnDel.TabIndex = 2;
+            this.btnDel.Text = "button1";
+            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 268);
             this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnDel);
             this.Controls.Add(this.btnExp);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblFirstName);
@@ -126,6 +138,7 @@ namespace UserMaintenance
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnExp;
+        private System.Windows.Forms.Button btnDel;
     }
 }
 
