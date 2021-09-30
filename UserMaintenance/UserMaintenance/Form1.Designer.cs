@@ -35,6 +35,7 @@ namespace UserMaintenance
             this.lblFirstName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnExp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtLastName
@@ -77,6 +78,7 @@ namespace UserMaintenance
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // listBox1
             // 
@@ -86,12 +88,23 @@ namespace UserMaintenance
             this.listBox1.Size = new System.Drawing.Size(195, 251);
             this.listBox1.TabIndex = 3;
             // 
+            // btnExp
+            // 
+            this.btnExp.Location = new System.Drawing.Point(216, 156);
+            this.btnExp.Name = "btnExp";
+            this.btnExp.Size = new System.Drawing.Size(232, 42);
+            this.btnExp.TabIndex = 2;
+            this.btnExp.Text = "button1";
+            this.btnExp.UseVisualStyleBackColor = true;
+            this.btnExp.Click += new System.EventHandler(this.btnExp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(460, 268);
             this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnExp);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblLastName);
@@ -112,6 +125,7 @@ namespace UserMaintenance
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnExp;
     }
 }
 
